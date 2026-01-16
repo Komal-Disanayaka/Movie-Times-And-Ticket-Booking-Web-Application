@@ -1,0 +1,233 @@
+.contact-us-page {
+  min-height: 100vh;
+  background: #000;
+  padding-bottom: 60px;
+}
+
+.contact-hero {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(255, 152, 0, 0.1));
+  padding: 100px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1920') center/cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.contact-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.8s ease;
+}
+
+.contact-hero-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-content {
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info-card {
+  background: rgba(20, 20, 20, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 152, 0, 0.2);
+  border-radius: 16px !important;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(255, 152, 0, 0.5);
+  box-shadow: 0 10px 40px rgba(255, 152, 0, 0.2);
+}
+
+.contact-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.contact-info-card:hover .contact-icon-wrapper {
+  transform: scale(1.1) rotate(360deg);
+}
+
+.contact-icon {
+  font-size: 40px !important;
+  color: #fff;
+}
+
+.contact-info-title {
+  color: #ff9800;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.contact-info-text {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.contact-form-wrapper {
+  background: rgba(20, 20, 20, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 152, 0, 0.2);
+  border-radius: 20px !important;
+  padding: 50px;
+  margin-top: 50px;
+  animation: fadeInUp 1.2s ease;
+}
+
+.form-label {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: block;
+}
+
+.contact-input .MuiOutlinedInput-root {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  color: #fff;
+}
+
+.contact-input .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+.contact-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 152, 0, 0.5);
+}
+
+.contact-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ff9800;
+  border-width: 2px;
+}
+
+.contact-input .MuiInputBase-input {
+  color: #fff;
+  padding: 16px;
+}
+
+.contact-input .MuiInputBase-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.contact-textarea .MuiOutlinedInput-root {
+  padding: 0;
+}
+
+.contact-input .MuiSelect-icon {
+  color: #ff9800;
+}
+
+.contact-input .MuiMenuItem-root {
+  background: rgba(20, 20, 20, 0.95);
+  color: #fff;
+}
+
+.contact-input .MuiMenuItem-root:hover {
+  background: rgba(255, 152, 0, 0.1);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%) !important;
+  color: #fff !important;
+  padding: 14px 50px !important;
+  border-radius: 30px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 25px rgba(255, 152, 0, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(255, 152, 0, 0.5) !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 960px) {
+  .contact-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-hero-subtitle {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .contact-form-wrapper {
+    padding: 30px 20px;
+  }
+
+  .contact-info-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-hero {
+    padding: 80px 0 60px;
+  }
+
+  .contact-hero-title {
+    font-size: 2rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 14px 30px !important;
+  }
+}

@@ -1,0 +1,193 @@
+.navbar {
+  background: linear-gradient(180deg, rgba(0,0,0,0.98) 0%, rgba(0,0,0,0.95) 100%) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1100 !important;
+}
+
+.navbar-toolbar {
+  padding: 10px 48px !important;
+  min-height: 70px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  color: white !important;
+  font-size: 1.6rem !important;
+  text-shadow: 0 2px 15px rgba(255, 152, 0, 0.4);
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: #ff9800 !important;
+  text-shadow: 0 2px 20px rgba(255, 152, 0, 0.6);
+}
+
+.navbar-desktop {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.navbar-links-main {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.navbar-links-auth {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn {
+  color: white !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  padding: 8px 18px !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ff9800 !important;
+}
+
+.nav-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #ff9800;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-btn:hover::after {
+  width: 50%;
+}
+
+.nav-btn-highlighted {
+  background: linear-gradient(135deg, #ff9800 0%, #ff6f00 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4) !important;
+  padding: 10px 24px !important;
+}
+
+.nav-btn-highlighted:hover {
+  background: linear-gradient(135deg, #ff6f00 0%, #ff9800 100%) !important;
+  box-shadow: 0 6px 25px rgba(255, 152, 0, 0.6) !important;
+  transform: translateY(-2px);
+  color: white !important;
+}
+
+.nav-btn-highlighted::after {
+  display: none;
+}
+
+/* Mobile Menu Icon */
+.navbar-mobile-icon {
+  display: none !important;
+  color: white !important;
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+  background: #0a0a0a !important;
+  width: 280px;
+  padding: 20px;
+}
+
+.mobile-drawer .MuiList-root {
+  padding: 0;
+}
+
+.mobile-drawer .MuiListItem-root {
+  padding: 8px 0;
+}
+
+.mobile-drawer .nav-btn {
+  justify-content: flex-start;
+  padding: 12px 20px !important;
+  font-size: 1rem !important;
+}
+
+.navbar-drawer .MuiDrawer-paper {
+  background: rgba(10, 10, 10, 0.98) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .navbar-toolbar {
+    padding: 10px 30px !important;
+  }
+  
+  .nav-btn {
+    padding: 8px 14px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .nav-btn-highlighted {
+    padding: 10px 20px !important;
+  }
+  
+  .navbar-links-auth {
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 960px) {
+  .navbar-desktop {
+    display: none !important;
+  }
+  
+  .navbar-mobile-icon {
+    display: block !important;
+  }
+  
+  .navbar-toolbar {
+    padding: 10px 20px !important;
+    min-height: 60px !important;
+  }
+  
+  .navbar-logo {
+    font-size: 1.3rem !important;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-logo {
+    font-size: 1.1rem !important;
+    letter-spacing: 1.5px;
+  }
+  
+  .navbar-toolbar {
+    padding: 8px 16px !important;
+  }
+}

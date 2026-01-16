@@ -1,0 +1,15 @@
+{
+  "short_name": "MovieNest",
+  "name": "MovieNest - Movie Ticket Booking System",
+  "icons": [
+    {
+      "src": "p1.avif",
+      "type": "image/avif",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1a1a2e",
+  "background_color": "#1a1a2e"
+}

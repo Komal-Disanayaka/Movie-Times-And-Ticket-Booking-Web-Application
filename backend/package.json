@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Movie System Backend Part",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed:admin": "node seedAdmin.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Komal-Dissanayaka",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^5.2.1",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.6.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

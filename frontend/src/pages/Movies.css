@@ -1,0 +1,80 @@
+.movies-page {
+  min-height: 100vh;
+  background: #000;
+  padding: 100px 0 60px;
+}
+
+.movies-loading {
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movies-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.movies-title {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  color: white !important;
+  margin-bottom: 16px !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.movies-subtitle {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 1.15rem !important;
+}
+
+.no-movies {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 80px 40px;
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.no-movies-title {
+  color: white !important;
+  font-weight: 700 !important;
+  margin-bottom: 12px !important;
+}
+
+.no-movies-text {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 1.05rem !important;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+  .movies-title {
+    font-size: 2.2rem !important;
+  }
+
+  .movies-page {
+    padding: 80px 0 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .movies-page {
+    padding: 80px 0 40px;
+  }
+
+  .movies-title {
+    font-size: 1.8rem !important;
+  }
+
+  .no-movies {
+    padding: 60px 25px;
+  }
+}
